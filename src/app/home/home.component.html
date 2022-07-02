@@ -1,0 +1,23 @@
+<ul>
+    <li *ngFor="let food of menu">
+
+
+      <a routerLink="/food/{{food.id}}">
+       <img src="{{food.imageurl}}" alt="foods images">
+
+       <div class="content">
+       <div class="name">
+          {{food.name}}
+       </div>
+
+        <span class="review {{food.review?'':'any'}}">🧡</span>
+      
+             </div>
+          <div class="price">
+            Price: {{food.price}}
+            </div>
+
+          </a>
+            </li>
+               </ul>
+

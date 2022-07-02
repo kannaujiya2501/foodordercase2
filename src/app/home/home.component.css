@@ -1,0 +1,40 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+ul li a{
+    height: 20rem;
+    width:20rem;
+    border: 1px solid lightpink;
+    border-radius: 1rem;
+    margin:0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color:green;
+    text-decoration: none;
+}
+li a:hover{
+    opacity: .9;
+    position: relative;
+}
+.content{
+    padding: .5rem 1rem;
+    position:relative;
+}
+.review{
+    position: absolute;
+    top:.5rem;
+    right: 1rem;
+    font-size: 1.2rem;
+}
+.review .any{
+    color:blue;
+}
+
+.price{
+    margin-bottom: 4rem;
+}
