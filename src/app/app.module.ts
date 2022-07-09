@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+//import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { DishesComponent } from './dishes/dishes.component';
 import { SearchComponent } from './search/search.component';
 import { ServiceComponent } from './service/service.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CartorderComponent } from './cartorder/cartorder.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     DishesComponent,
     SearchComponent,
     ServiceComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    // CartComponent,
+    CartorderComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FontAwesomeModule,
     HttpClientModule
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })

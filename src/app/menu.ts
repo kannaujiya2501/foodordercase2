@@ -1,4 +1,5 @@
  export interface Menu {
+   quantity: number;
    id:number;
     name:string;
     price:number;

@@ -2,7 +2,7 @@
     <li *ngFor="let food of menu">
 
 
-      <a routerLink="/food/{{food.id}}">
+      <a routerLink="/food">
        <img src="{{food.imageurl}}" alt="foods images">
 
        <div class="content">
@@ -10,11 +10,16 @@
           {{food.name}}
        </div>
 
-        <span class="review {{food.review?'':'any'}}">🧡</span>
+        <span class="review {{food.review?'':'not'}}">Excellent</span>
       
              </div>
           <div class="price">
             Price: {{food.price}}
+            </div>
+            <div> 
+              <button style="margin-bottom: 20px;" class="btn btn-warning" (click)="addToCart()" >Order Now</button> 
+
+              
             </div>
 
           </a>

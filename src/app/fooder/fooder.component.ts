@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-fooder',
   templateUrl: './fooder.component.html',
   styleUrls: ['./fooder.component.css']
 })
